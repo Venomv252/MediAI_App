@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "env": {
+    "VITE_GEMINI_API_KEY": "AIzaSyAb8RN6Jplr8IhawYn3mrZrkElz7EdivctwjttiBz-ijKltZV3g",
+    "VITE_API_URL": "https://mediai-app.onrender.com"
+  }
+}
