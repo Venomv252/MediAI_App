@@ -42,7 +42,7 @@ export const createDoctorSession = async (promptType = "SYMPTOM_CHECKER") => {
 };
 
 export const analyzeMedicine = async (text, file) => {
-  const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
   
   const prompt = `You are an AI Pharmacist. Analyze the provided medicine (by name or image). 
 Return a JSON object exactly, with exactly these keys: 
