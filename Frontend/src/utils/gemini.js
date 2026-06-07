@@ -30,7 +30,7 @@ Always maintain a serious, professional tone and advise them to consult a doctor
 
 export const createDoctorSession = async (promptType = "SYMPTOM_CHECKER") => {
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.5-flash", 
+    model: "gemini-1.5-flash", 
     systemInstruction: SYSTEM_PROMPTS[promptType],
   });
 
@@ -42,7 +42,7 @@ export const createDoctorSession = async (promptType = "SYMPTOM_CHECKER") => {
 };
 
 export const analyzeMedicine = async (text, file) => {
-  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
   
   const prompt = `You are an AI Pharmacist. Analyze the provided medicine (by name or image). 
 Return a JSON object exactly, with exactly these keys: 
