@@ -30,7 +30,7 @@ Always maintain a serious, professional tone and advise them to consult a doctor
 
 export const createDoctorSession = async (promptType = "SYMPTOM_CHECKER") => {
   const model = genAI.getGenerativeModel({
-    model: "gemini-pro", 
+    model: "gemini-2.5-flash", 
     systemInstruction: SYSTEM_PROMPTS[promptType],
   });
 
